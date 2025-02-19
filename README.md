@@ -24,6 +24,7 @@ This project aims to **protect a real website** from malicious automated attacks
 ### 4️⃣ **Log Server (ELK Stack: Elasticsearch, Logstash, Kibana)**  
 - Aggregates logs from **proxy, web server, and honeypot**.  
 - Provides **real-time attack monitoring** with dashboards.  
+---
 
 # 📊 Monitoring and Analysis  
 
