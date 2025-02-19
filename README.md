@@ -25,3 +25,24 @@ This project aims to **protect a real website** from malicious automated attacks
 - Aggregates logs from **proxy, web server, and honeypot**.  
 - Provides **real-time attack monitoring** with dashboards.  
 
+# 📊 Monitoring and Analysis  
+
+- **Kibana Dashboards** provide real-time insights into **attacker activity**.  
+- **HAProxy logs** track suspicious requests and blocked IPs.  
+- **Honeypot logs** reveal attack techniques and bot behavior.  
+
+---
+
+# 🛠️ Technologies Used  
+
+- **Proxy:** HAProxy, Fail2Ban  
+- **Web Server:** Apache, MySQL, WordPress  
+- **Honeypot:** WordPress 6.5.5 (with simulated vulnerabilities)  
+- **Logging & Analysis:** Elasticsearch, Logstash, Kibana (ELK Stack)  
+
+---
+
+# 🔒 Disclaimer  
+
+🚨 **This project is for research and educational purposes only.** 🚨  
+Deploying a honeypot **with real vulnerabilities** requires careful control to **prevent unintended exploitation**. Use at your own risk.  
