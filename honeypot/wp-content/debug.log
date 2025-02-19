@@ -1,0 +1,46 @@
+[08-Jan-2025 01:50:01 UTC] PHP Warning:  Undefined variable $db_user in /var/www/html/wp-config.php on line 22
+[08-Jan-2025 01:50:02 UTC] PHP Warning:  Undefined variable $db_pass in /var/www/html/wp-config.php on line 23
+[08-Jan-2025 01:50:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/html/wp-content/plugins/vulnerable-plugin/core.php:47
+Stack trace:
+#0 /var/www/html/wp-content/plugins/vulnerable-plugin/core.php(50): db_connect()
+#1 /var/www/html/wp-admin/admin.php(34): load_plugin_settings()
+#2 {main}
+  thrown in /var/www/html/wp-content/plugins/vulnerable-plugin/core.php on line 47
+[08-Jan-2025 01:52:15 UTC] MySQL Error: Access denied for user "admin_fake"@127.0.0.1 (using password: YES)
+[08-Jan-2025 01:52:30 UTC] WordPress Database Error: Query failed on table wp_posts.
+[08-Jan-2025 01:53:12 UTC] PHP Notice:  Undefined index: api_key in /wp-content/plugins/old-plugin/api-handler.php on line 15
+[08-Jan-2025 01:55:00 UTC] Warning: Failed to write to /var/www/html/wp-content/uploads/debug-file.log. Disk full?
+[08-Jan-2025 02:05:00 UTC] File upload detected: /wp-content/uploads/temp/backdoor.php
+[08-Jan-2025 02:05:01 UTC] Upload error: MIME type not allowed (application/x-php).
+[08-Jan-2025 02:05:05 UTC] Upload success: /wp-content/uploads/temp/image.jpg
+[08-Jan-2025 02:05:10 UTC] Warning: Malicious upload detected, file quarantined: /wp-content/uploads/temp/backdoor.php
+[08-Jan-2025 02:10:15 UTC] Database Connection Error: Could not connect to database "wordpress".
+[08-Jan-2025 02:10:16 UTC] Credentials Used:
+  DB_USER: admin_test
+  DB_PASS: pass1234
+  DB_HOST: localhost
+[08-Jan-2025 02:10:20 UTC] Connection Failed: Host "192.168.1.200" denied access.
+[08-Jan-2025 02:11:01 UTC] Database Query Failed: SELECT * FROM wp_users WHERE user_id=1
+[08-Jan-2025 02:11:05 UTC] Malformed Query: DROP DATABASE test_db;
+[08-Jan-2025 02:15:00 UTC] Plugin Error: Failed to load /wp-content/plugins/backup-plugin/backup-core.php.
+[08-Jan-2025 02:15:01 UTC] PHP Notice:  Undefined index: backup_key in /wp-content/plugins/backup-plugin/init.php on line 22
+[08-Jan-2025 02:15:02 UTC] Backup Failed: Could not write to /var/backups/wordpress-backup-08-Jan-2025.zip.
+[08-Jan-2025 02:15:10 UTC] Backup Process Terminated: Permission denied for user "backup_user".
+[08-Jan-2025 02:15:30 UTC] Warning: Deprecated function used in /wp-content/plugins/old-plugin/functions.php on line 112.
+[08-Jan-2025 02:20:00 UTC] Access denied to /wp-content/uploads/temp/sensitive-data.txt
+[08-Jan-2025 02:20:01 UTC] Warning: File permissions for /var/www/html/wp-content/uploads/temp/config-backup.php are too lenient.
+[08-Jan-2025 02:20:05 UTC] Error: Failed to delete /wp-content/uploads/temp/unsecured-file.php
+[08-Jan-2025 02:20:15 UTC] Warning: Attempt to execute PHP file from /wp-content/uploads/temp/malicious.php detected.
+[08-Jan-2025 02:25:00 UTC] Login Attempt Failed: User "admin" with password "password123"
+[08-Jan-2025 02:25:01 UTC] Login Attempt Failed: User "root" with password "toor"
+[08-Jan-2025 02:25:10 UTC] Login Attempt Success: User "wp_admin" with password "wp_secure_pass"
+[08-Jan-2025 02:25:15 UTC] Login Success: User "test_user" with password "123456"
+[08-Jan-2025 02:25:30 UTC] Warning: Suspicious login activity detected from IP 192.168.1.101
+[08-Jan-2025 02:30:00 UTC] CRON: Scheduled backup started for database "wordpress".
+[08-Jan-2025 02:30:01 UTC] CRON: Executing task: /usr/bin/php /var/www/html/wp-content/plugins/backup-plugin/backup.php
+[08-Jan-2025 02:30:10 UTC] Backup Completed: File saved to /var/backups/wp_backup_08-01-2025.zip.
+[08-Jan-2025 02:30:15 UTC] Warning: Backup incomplete, file integrity check failed.
+[08-Jan-2025 02:35:00 UTC] Shell Access Detected: User "www-data" executed /tmp/webshell.php.
+[08-Jan-2025 02:35:01 UTC] Command Executed: "ls -la /var/www/html"
+[08-Jan-2025 02:35:02 UTC] Warning: Unauthorized attempt to modify /etc/passwd
+[08-Jan-2025 02:35:10 UTC] Shell Terminated: Access denied for IP 192.168.1.105

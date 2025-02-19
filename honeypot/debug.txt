@@ -1,0 +1,1 @@
+[ERROR] Debug mode enabled. See wp-content/plugins/wp-debug-rce/wp-debug-rce.php
