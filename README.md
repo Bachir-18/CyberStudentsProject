@@ -28,7 +28,6 @@ This project aims to **protect a real website** from malicious automated attacks
 
 # 📊 Monitoring and Analysis  
 
-- **Kibana Dashboards** provide real-time insights into **attacker activity**.  
 - **HAProxy logs** track suspicious requests and blocked IPs.  
 - **Honeypot logs** reveal attack techniques and bot behavior.  
 
